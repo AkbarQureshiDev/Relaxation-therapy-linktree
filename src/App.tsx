@@ -6,7 +6,7 @@ import MagneticButtonDemo from './components/magnetic-button-demo';
 const LocationPill = () => (
   <div className="info-pill">
     <MapPin size={16} />
-    <span>Los Angeles, CA</span>
+    <span>المملكة العربية السعودية · خدمة احترافية</span>
   </div>
 );
 
@@ -43,7 +43,7 @@ const StarRating = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.5 }}
       >
-        5.0 (124 reviews)
+        4.9 · أكثر من 500 تقييم
       </motion.span>
     </div>
   );
@@ -82,7 +82,7 @@ function App() {
         <div className="ambient-orb bottom-right"></div>
       </div>
       
-      <div className="clickable-wrapper" onClick={() => window.open('https://example.com', '_blank')}>
+      <div className="clickable-wrapper" onClick={() => window.open('https://wa.me/966546420141', '_blank')}>
         <motion.div 
           className="center-card"
           variants={containerVariants}
@@ -95,12 +95,12 @@ function App() {
           </motion.div>
           
           <motion.h1 className="main-title" variants={itemVariants}>
-            Eleanor <br />
-            Design Studio
+            العلاج بالتدليك <br />
+            خبراء إندونيسيون
           </motion.h1>
           
-          <motion.p className="body-text" variants={itemVariants}>
-            Crafting premium digital experiences through minimalist design and immersive animations.
+          <motion.p className="body-text" variants={itemVariants} style={{ direction: 'rtl' }}>
+            تقنيات الشفاء الإندونيسية التقليدية الأصيلة — يقدّمها لك معالجون متخصصون معتمدون.
           </motion.p>
           
           <motion.div variants={itemVariants}>
@@ -108,7 +108,7 @@ function App() {
           </motion.div>
           
           <motion.div variants={itemVariants} className="section-label" style={{ marginTop: '32px' }}>
-            Work With Us
+            احجز جلستك
           </motion.div>
           
           <motion.div variants={itemVariants}>
