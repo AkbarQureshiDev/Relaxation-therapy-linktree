@@ -2,7 +2,7 @@ import { MagneticButton } from "./ui/magnetic-button";
 
 export default function MagneticButtonDemo() {
   const handleClick = () => {
-    console.log("clicked");
+    window.open("https://wa.me/966546420141", "_blank");
   };
   return (
     <div className="magnetic-demo-container">
@@ -11,7 +11,7 @@ export default function MagneticButtonDemo() {
           onClick={handleClick}
           className="magnetic-btn"
         >
-          Follow @mannupaaji
+          Chat on Whatsapp
         </button>
       </MagneticButton>
     </div>
