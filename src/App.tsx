@@ -108,6 +108,15 @@ function App() {
             <StarRating />
           </motion.div>
 
+          <motion.div variants={itemVariants} className="section-label">
+            احجز جلستك
+          </motion.div>
+          
+          <motion.div variants={itemVariants} className="buttons-row">
+            <MagneticButtonDemo />
+            <PhoneButton />
+          </motion.div>
+
           {/* Service Option Cards */}
           <motion.div variants={itemVariants} className="service-cards-section">
             <div className="service-cards-heading">Service Options</div>
@@ -150,15 +159,6 @@ function App() {
                 <p className="service-card-detail-ar">خدمة فندقية مميزة</p>
               </motion.div>
             </div>
-          </motion.div>
-          
-          <motion.div variants={itemVariants} className="section-label">
-            احجز جلستك
-          </motion.div>
-          
-          <motion.div variants={itemVariants} className="buttons-row">
-            <MagneticButtonDemo />
-            <PhoneButton />
           </motion.div>
 
           {/* Booking Details & Guidelines */}
